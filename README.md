@@ -14,6 +14,11 @@ The project's code is all here, but you will need to install Hugo on your machin
 - GD extension
 - mod_rewrite enabled (on apache)
 
+
+## Screenshots
+1. Cockpit dashboard: [https://raw.githubusercontent.com/sjardim/Hugopit/master/cockpit-screenshot.png](https://raw.githubusercontent.com/sjardim/Hugopit/master/cockpit-screenshot.png)
+2. Hugo website: [https://raw.githubusercontent.com/sjardim/Hugopit/master/hugo-screenshot.png](https://raw.githubusercontent.com/sjardim/Hugopit/master/hugo-screenshot.png)
+
 ## Why use it?
 Although Cockpit appears to have great performance, it still depends on a server running PHP. With this solution, you can have the UX of a web based editor and use Hugo to create a static site that can run everywhere (Github pages, S3, etc). Not beats this approach in security (no files and database to worry about)
 
