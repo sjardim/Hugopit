@@ -1,0 +1,49 @@
+baseurl = "http://sergiojardim.com/"
+title = "Hugo + Cockpit"
+theme = "ghostwriter"
+languageCode = "en-us"
+copyright = "Sérgio Jardim"
+googleAnalytics = "XXX"
+disqusShortname = "XXX"
+
+[Author]
+    name = "Sérgio Jardim"
+    profile = "https://google.com/+sjardim"
+
+[Taxonomies]
+    categories = "categories"
+    tags = "tags"
+
+[Params]
+    intro = true
+    headline = "Hugo + Cockpit"
+    description = "A web based editor for Hugo"
+    # description = "Slimy things oozing my brain"
+    github = "https://github.com/sjardim"
+    linkedin = "https://linkedin.com/in/sjardim/"
+    gplus = "https://google.com/+sjardim"
+    twitter = "https://twitter.com/sjardim"
+    stackoverflow = "http://stackoverflow.com/users/sjardim/YYY"
+
+[Permalinks]
+    post = "/:filename/"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
