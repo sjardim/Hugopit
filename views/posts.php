@@ -32,30 +32,6 @@ foreach ($posts as $post):
   $featured_image = substr($post['featured_image'], 11); //remove 'site:static' from img path
   $type = "post";
 
-// print_r($post['categories']);
-
-  // if ( $post['categories'] )
-  // {
-  //   $categories_list = "";
-
-  //   //related collection
-  //   for ($i = 0; $i < count($post['categories']); ++$i) {
-  //   // foreach ($post['categories'] as $key => $value) {
-      
-  //     $count_categories++;
-
-  //     echo $post['categories'][$i]['Name'];
-  //   }
-
-  // }
-  // } else 
-  // {
-  //   $categories = '"Uncategorized"';
-  // }
-// print_r($categories_list);
-
-  // $categories = '"'.implode('", "', $categories_list).'"';
-
   // $collection_id = "5672ef88974dfdoc1371303873";
   // $post_id = $post['_id'];
   // $edit_url = "http://blog-cockpit/cockpit/index.php/collections/entry/".$collection_id.'/'.$post_id;
