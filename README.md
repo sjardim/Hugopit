@@ -17,5 +17,12 @@ The project's code is all here, but you will need to install Hugo on your machin
 ## Why use it?
 Although Cockpit appears to have great performance, it still depends on a server running PHP. With this solution, you can have the UX of a web based editor and use Hugo to create a static site that can run everywhere (Github pages, S3, etc). Not beats this approach in security (no files and database to worry about)
 
+## Instructions
+
+1. Download this repo contents
+2. Create a new hugo site: `hugo new site mysite`
+3. Replace `mysite` folder contents with the contents  you just download
+4. Run hugo server --watch
+
 ---
 **Note**: I recorded the screens on my ultra wide monitor with a proportion of 21:9. I realised now it wasn't the best of ideas, specially if you watch it on a small monitor.
