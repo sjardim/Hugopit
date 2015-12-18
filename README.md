@@ -1,11 +1,11 @@
 # Hugopit
-An idea for a web based editor for (Hugo)[http://gohugo.io] (draft idea)
+An idea for a web based editor for [Hugo](http://gohugo.io)
 
 I stumbled upon on the [Cockpit](http://www.getcockpit.com ) CMS, which is built in PHP and uses SQLite (or MongoDB) as database. I've found it very neat, as it has custom fields and other cool stuff and appears to be very fast. 
 
-But I wondered if I could adapt it as an editor for (Hugo)[http://gohugo.io], a static site generator built in Go. As a matter of fact, it worked better than expected. :)
+But I wondered if I could adapt it as an editor for [Hugo](http://gohugo.io), a static site generator built in Go. As a matter of fact, it worked better than expected. :)
 
-I put together a (quick demo video)[https://www.youtube.com/watch?v=jJzMCTH5z-c] to show my approach and how things worked. I used it's PHP API to create the .md files for Hugo. 
+I put together a [quick demo video](https://www.youtube.com/watch?v=jJzMCTH5z-c) to show my approach and how things worked. I used it's PHP API to create the .md files for Hugo. 
 
 The project's code is all here, but you will need to install Hugo on you maching, of course. You also need to have the requirements for running Cockpit:
 
