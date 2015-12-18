@@ -63,7 +63,6 @@ foreach ($posts as $post):
     $categories_list = "[";
     
     for ($i = 0; $i < count($post['categories']); ++$i) {
-    // foreach ($post['categories'] as $key => $value) {
       
       $count_categories++;
       if ($i != 0) {
