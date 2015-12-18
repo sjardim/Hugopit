@@ -29,7 +29,7 @@ disqusShortname = "XXX"
     post = "/:filename/"
 
 [[menu.main]]
-    name = "Blog"
+    name = "Articles"
     url = "/"
     weight = 1
 

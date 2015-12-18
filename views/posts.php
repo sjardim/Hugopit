@@ -9,10 +9,13 @@
   <div class="app-wrapper">
 <?php 
 $count = 0;
-// $count_categories = 0;
-print_r($posts);
+$count_categories = 0;
+
+// print_r($posts);
+
 foreach ($posts as $post): 
   $count++;
+
   $output_dir = "./content/posts";
   if (!is_dir($output_dir)) {
       mkdir($output_dir);         
@@ -29,20 +32,29 @@ foreach ($posts as $post):
   $featured_image = substr($post['featured_image'], 11); //remove 'site:static' from img path
   $type = "post";
 
-  if ($post['categories']) 
-  {
-    //related collection
-    foreach ($post['categories'] as $key => $value) {
-      // $count_categories++;
-      $categories_list[] = $value['Name'];
-    }
-    $categories = '"'.implode('", "', $categories_list).'"';
-  } else 
-  {
-    $categories = '"Uncategorized"';
-  }
+// print_r($post['categories']);
 
-  
+  // if ( $post['categories'] )
+  // {
+  //   $categories_list = "";
+
+  //   //related collection
+  //   for ($i = 0; $i < count($post['categories']); ++$i) {
+  //   // foreach ($post['categories'] as $key => $value) {
+      
+  //     $count_categories++;
+
+  //     echo $post['categories'][$i]['Name'];
+  //   }
+
+  // }
+  // } else 
+  // {
+  //   $categories = '"Uncategorized"';
+  // }
+// print_r($categories_list);
+
+  // $categories = '"'.implode('", "', $categories_list).'"';
 
   // $collection_id = "5672ef88974dfdoc1371303873";
   // $post_id = $post['_id'];
@@ -68,8 +80,32 @@ foreach ($posts as $post):
   file_put_contents($file, "\n", FILE_APPEND);
   file_put_contents($file, 'slug = "' .$slug.'"', FILE_APPEND);
   file_put_contents($file, "\n", FILE_APPEND);
-  file_put_contents($file, 'categories = [' .$categories.']', FILE_APPEND);
-  file_put_contents($file, "\n", FILE_APPEND);
+  
+  //related collection
+  if ( $post['categories'] )  
+  {
+    $categories_list = "[";
+    
+    for ($i = 0; $i < count($post['categories']); ++$i) {
+    // foreach ($post['categories'] as $key => $value) {
+      
+      $count_categories++;
+      if ($i != 0) {
+        $categories_list .= ", ";
+      }      
+      $categories_list .= '"'.$post['categories'][$i]['Name'].'"';      
+    }
+
+    $categories_list .= "]";
+
+    file_put_contents($file, 'categories = ' .$categories_list, FILE_APPEND);
+    file_put_contents($file, "\n", FILE_APPEND);
+  } else {
+    file_put_contents($file, 'categories = ["uncategorized"]', FILE_APPEND);
+    file_put_contents($file, "\n", FILE_APPEND);
+  }
+
+  
   file_put_contents($file, 'featured_image = "' .$featured_image.'"', FILE_APPEND);
   file_put_contents($file, "\n", FILE_APPEND);
   file_put_contents($file, '+++', FILE_APPEND);
@@ -80,9 +116,10 @@ foreach ($posts as $post):
 
   ?>
       <h2>
-        <?php echo $count; ?> posts were generated sucessfully!
+        <?php echo $count; ?> posts and <?php echo $count_categories; ?> categories were generated sucessfully!
       </h2>
-      <a href="/"  class="uk-button uk-button-primary uk-button">Go Back</a>
+      <p><a href="/posts"  class="uk-button uk-button-primary uk-button-large">Generate again</a></p>
+      <a href="/"  class="uk-button uk-button-default uk-button">Go Back</a>
     </div>
 </div>
 </body>

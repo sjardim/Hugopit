@@ -1,0 +1,12 @@
+<li class="post-stub" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <a href="{{ .Permalink }}" itemprop="url" title="Go to post detail">
+        <h4 class="post-stub-title" itemprop="name">{{ .Title }}</h4>
+        <time class="post-stub-date" datetime="{{ .Date.Format "2006-01-02" }}">Published {{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+        {{ with .Params.featured }}
+            <span class="post-stub-tag">Featured</span>
+        {{ end }}
+        {{ with .Draft }}
+            <span class="post-stub-tag" style="background: red">Draft</span>
+        {{ end }}
+    </a>
+</li>

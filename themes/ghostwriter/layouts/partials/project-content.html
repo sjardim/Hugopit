@@ -1,0 +1,7 @@
+<div class="post-content clearfix">
+    {{ with .Params.featured_image }}
+        <img class="post-featured-image" src="{{ . }}">
+    {{ end }}
+
+    {{ .Content }}
+</div>
