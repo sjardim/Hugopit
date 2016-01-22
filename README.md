@@ -20,14 +20,14 @@ The project's code is all here, but you will need to install Hugo on your machin
 2. Hugo website: [https://raw.githubusercontent.com/sjardim/Hugopit/master/hugo-screenshot.png](https://raw.githubusercontent.com/sjardim/Hugopit/master/hugo-screenshot.png)
 
 ## Why use it?
-Although Cockpit appears to have great performance, it still depends on a server running PHP. With this solution, you can have the UX of a web based editor and use Hugo to create a static site that can run everywhere (Github pages, S3, etc). Not beats this approach in security (no files and database to worry about)
+Although Cockpit appears to have great performance, it still depends on a server running PHP. With this solution, you can have the UX of a web based editor and use Hugo to create a static site that can run everywhere (Github pages, S3, etc). Nothing beats this approach in security (no files and database to worry about)
 
 ## Instructions
 
 1. Download this repo contents
 2. Create a new hugo site: `hugo new site mysite`
-3. Replace `mysite` folder contents with the contents  you just download
+3. Replace `mysite` folder contents with the contents  you just downloaded
 4. Run hugo server --watch
 
 ---
-**Note**: I recorded the screens on my ultra wide monitor with a proportion of 21:9. I realised now it wasn't the best of ideas, specially if you watch it on a small monitor.
+**Note**: I recorded the screen on my ultra wide monitor wich has a proportion of 21:9. I noticed after that it wasn't the best of ideas, specially if you watch it on a small monitor.
