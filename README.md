@@ -1,5 +1,7 @@
 # Hugopit
-An idea for a web based editor for [Hugo](http://gohugo.io)
+An EXPERIMENTAL idea for a web based editor for [Hugo](http://gohugo.io).
+
+**THIS IS IN APLHA STATE**.
 
 I stumbled upon on the [Cockpit](http://www.getcockpit.com ) CMS, which is built in PHP and uses SQLite (or MongoDB) as database. I've found it very neat, as it has custom fields and other cool stuff and appears to be very fast. 
 
@@ -20,7 +22,12 @@ The project's code is all here, but you will need to install Hugo on your machin
 2. Hugo website: [https://raw.githubusercontent.com/sjardim/Hugopit/master/hugo-screenshot.png](https://raw.githubusercontent.com/sjardim/Hugopit/master/hugo-screenshot.png)
 
 ## Why use it?
-Although Cockpit appears to have great performance, it still depends on a server running PHP. With this solution, you can have the UX of a web based editor and use Hugo to create a static site that can run everywhere (Github pages, S3, etc). Nothing beats this approach in security (no files and database to worry about)
+
+Although Cockpit appears to have great performance, it still depends on a server running PHP. With this solution, you can have the UX of a web based editor and use Hugo to create a static site that can run everywhere (Github pages, S3, etc). Nothing beats this approach in security (no files and database to worry about). 
+
+## Why NOT use it
+
+You can't import Hugo content to it, unless you make such code. This was an experiment and only works on creating new content.
 
 ## Instructions
 
