@@ -7,7 +7,7 @@ I stumbled upon on the [Cockpit](http://www.getcockpit.com ) CMS, which is built
 
 But I wondered if I could adapt it as an editor for [Hugo](http://gohugo.io), a static site generator built in Go. As a matter of fact, it worked better than expected. :)
 
-I put together a [quick demo video](https://www.youtube.com/watch?v=jJzMCTH5z-c) to show my approach and how things worked. I used it's PHP API to create the .md files for Hugo. 
+I put together a [quick demo video](https://www.youtube.com/watch?v=jJzMCTH5z-c) to show my approach and how things worked. I used Cockpit's PHP API to create the .md files for Hugo. 
 
 The project's code is all here, but you will need to install Hugo on your machine, of course. You also need to have the requirements for running Cockpit:
 
