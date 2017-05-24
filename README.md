@@ -1,6 +1,10 @@
 # Hugopit
 An EXPERIMENTAL idea for a web based editor for [Hugo](http://gohugo.io).
 
+> UPDATE: Check a better project using [Cockpit + Hugo](https://github.com/iakta/hugocockpit), builti by @iakta.
+
+---
+
 **THIS IS IN APLHA STATE**.
 
 I stumbled upon on the [Cockpit](http://www.getcockpit.com ) CMS, which is built in PHP and uses SQLite (or MongoDB) as database. I've found it very neat, as it has custom fields and other cool stuff and appears to be very fast. 
